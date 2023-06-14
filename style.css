@@ -1,0 +1,33 @@
+#hero{
+    background-color: black; 
+    color: azure;
+    height: 20%;
+}
+#Features{
+    background-color: blue;
+     color: aliceblue;
+     height: 30%;
+}
+.grid{
+    display: flex;
+}
+#Features .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 125px;
+    width: 20vw;
+    color: rgb(255, 0, 0);}
+
+    .desc {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 125px;
+        width: 80vw;
+        padding: 5px;}
+    * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+    }
