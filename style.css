@@ -1,3 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #eee;
+}
+  
 #hero{
     background-color: black; 
     color: azure;
@@ -17,17 +26,89 @@
     justify-content: center;
     height: 125px;
     width: 20vw;
-    color: rgb(255, 0, 0);}
+    color: rgb(255, 0, 0);
+}
 
-    .desc {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        height: 125px;
-        width: 80vw;
-        padding: 5px;}
-    * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+.desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 125px;
+    width: 80vw;
+    padding: 5px;
+}
+
+#how-it-works {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+  
+#how-it-works > iframe {
+    max-width: 550px;
+    width: 100%;
+}
+  
+#pricing {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+  
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 30%;
+    border: 1px solid #aaaaaa;
+    border-radius: 3px;
+}
+  
+.product > .level {
+    background-color: #ddd;
+    color: black;
+    padding: 15px 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+  
+.product > h2 {
+    margin-top: 15px;
+}
+  
+.product > ol {
+    margin: 15px auto;
+}
+  
+.product > ol > li {
+    padding: 5px auto;
+}
+  
+.product > button {
+    border: 0;
+    margin: 15px 0;
+    background-color: #f1c40f;
+    font-weight: 400;
+}
+  
+.product > button:hover {
+    background-color: orange;
+    transition: background-color 1s;
+}
+  
+@media (max-width: 800px) {
+    #pricing {
+      flex-direction: column;
     }
+    .product {
+      max-width: 320px;
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 1rem;
+    }
+}
+  
