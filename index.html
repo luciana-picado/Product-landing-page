@@ -5,29 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-    <title>Product landing page
-    </title>
+    <title>Product landing page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header id="header">
-          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav id="nav-bar" class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#"></a>
-              <img src=https://w7.pngwing.com/pngs/504/646/png-transparent-point-of-sale-logo-shopify-sales-computer-icons-merchants-advertising-payment-logo-business.png alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+              <img id="header-img" src=https://w7.pngwing.com/pngs/504/646/png-transparent-point-of-sale-logo-shopify-sales-computer-icons-merchants-advertising-payment-logo-business.png alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
                 Product landing page
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="Features">Features</a>
+                    <a class="nav-link active" aria-current="page" href="#features">Features</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="How it works">How it works</a>
+                    <a class="nav-link" href="#how-it-works">How it works</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="Pricing">Pricing</a>
+                    <a class="nav-link" href="#pricing">Pricing</a>
                   </li>
                 </ul>
               </div>
@@ -35,52 +31,103 @@
           </nav>
     </header>
     <section id="hero">
-        <div class="container">
-            <div class="col-6">
                 <form id="form">
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Submit your email</label>
-                      <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                      <input type="email" class="form-control" placeholder="Enter your email adress" id="email" aria-describedby="emailHelp">
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <input id="submit" type="submit" class="btn btn-primary">Submit</input>
                   </form>
+    </section>
+<div class="container">
+    <section id="features">
+        <div class="grid">
+            <div class="icon">
+                <img src="https://images.vexels.com/media/users/3/206953/isolated/lists/bde53266b1bfbf4832b5cbd1e88b275a-icono-colorido-de-estrellas-de-brillo-limpio.png" alt="stars">
+            </div>
+            <div class="desc">
+                <h2>Premium materials</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, inceptos primis magna erat ridiculus tincidunt sociis phasellus, semper nec aliquam venenatis posuere in</p>
+            </div>
+        </div>
+        <div class="grid">
+            <div class="icon">
+                <img src="https://images.vexels.com/media/users/3/206953/isolated/lists/bde53266b1bfbf4832b5cbd1e88b275a-icono-colorido-de-estrellas-de-brillo-limpio.png" alt="stars">
+
+            </div>
+            <div class="desc">
+                <h2> Fast shipping</h2>
+                <p>Mollis placerat quis tempor arcu eget mauris vestibulum dignissim vivamus, ut parturient praesent facilisi risus laoreet cum class enim, viverra luctus torquent aenean blandit et faucibus netus</p>
+            </div>
+        </div>
+        <div class="grid">
+            <div class="icon">
+                <img src="https://images.vexels.com/media/users/3/206953/isolated/lists/bde53266b1bfbf4832b5cbd1e88b275a-icono-colorido-de-estrellas-de-brillo-limpio.png" alt="stars">
+
+            </div>
+            <div class="desc">      
+                <h2>Quality assurance</h2>   
+                <p>Tristique praesent magna mi scelerisque vulputate sed luctus vitae parturient, ultricies vel magnis eleifend non massa mollis.</p>
             </div>
         </div>
     </section>
-<section id="Features">
-    <div class="grid">
-        <div class="icon">
-        </div>
-        <div class="desc">
-            <h2>Premium materials</h2>
-            <p></p>
-        </div>
-    </div>
-    <div class="grid">
-        <div class="icon">
-        </div>
-        <div class="desc">
-            <h2> Fast shipping</h2>
-            <p></p>
-        </div>
-    </div>
-    <div class="grid">
-        <div class="icon">
-        </div>
-        <div class="desc">      
-            <h2>Quality assurance</h2>   
-            <p></p>
-        </div>
-    </div>
-</section>
-<section id="How it works">
+    
+    <section id="how-it-works">
+      <iframe
+        id="video"
+        height="300"
+        src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0"
+        allowfullscreen
+      ></iframe>
+    </section>
+    
+    <section id="pricing">
+      
+      <div class="product" id="tenor">
+        <div class="level">Tenor Trombone</div>
+        <h2>$600</h2>
+        <ol>
+          <li>Lorem ipsum.</li>
+          <li>Lorem ipsum.</li>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum.</li>
+        </ol>
+        <button class="btn">Select</button>
+      </div>
+    
+      <div class="product" id="bass">
+        <div class="level">Bass Trombone</div>
+        <h2>$900</h2>
+        <ol>
+          <li>Lorem ipsum.</li>
+          <li>Lorem ipsum.</li>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum.</li>
+        </ol>
+        <button class="btn">Select</button>
+      </div>
+    
+      <div class="product" id="valve">
+        <div class="level">Valve Trombone</div>
+        <h2>$1200</h2>
+        <ol>
+          <li>Plays similar to a Trumpet</li>
+          <li>Great for Jazz Bands</li>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum.</li>
+        </ol>
+        <button class="btn">Select</button>
+      </div>
+    
+    </section>
+</div>
 
-</section>
-<section id="Pricing">
-
-</section>
     <footer>
-
+        <ul>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <span>Copyright Sale Product Land® </span>
     </footer>
     
 </body>
